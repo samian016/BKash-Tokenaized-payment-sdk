@@ -12,66 +12,6 @@ const refound = require('./transection/refound')
 const refoundStatus = require('./transection/refoundStatus')
 
 
-
-// const axios = require('axios')
-// const token = new Object;
-// var  paymentID;
-// var createPaymentID;
-// var agreementID;
-// getToken().then(data => {
-//     token.statusCode = data.statusCode;
-//     token.statusMessage = data.statusMessage;
-//     token.token_type = data.token_type;
-//     token.expires_in = data.expires_in;
-//     token.id_token = data.id_token;
-//     token.refresh_token = data.refresh_token;
-// }).then((data)=>{
-//     console.log(data)
-// })
-
-
-// setTimeout(() => {
-//     reFreshToken(token.refresh_token).then((data) => {
-//         console.log(data);
-//     });
-// }, 1000)
-
-// setTimeout(() => {
-//     // console.log(token.id_token)
-//     createAgreement(token.id_token).then(data=>{
-//         // console.log(data.paymentID)
-//         paymentID= data.paymentID
-//     })
-//     setTimeout(()=>{
-//         // console.log(token.id_token)
-//         executeAgreement(paymentID,token.id_token).then((data)=>{
-//             agreementID = data.agreementID;
-//             setTimeout(()=>{
-//                 // console.log(paymentID,'ggg');
-//                 createPayment(agreementID,10,token.id_token)
-//                 .then((data)=>{
-//                     createPaymentID = data.paymentID;
-//                 })
-//                 setTimeout(()=>{
-                    
-//                     executePayment(createPaymentID, token.id_token)  
-//                 },60000)
-//             },8000)
-//         })
-//     },60000)
-// }, 3000)
-
-// setTimeout(()=>{
-//     queryAgreement("TokenizedMerchant02NSVCTVX1660017825385", token.id_token)
-// },2000)
-
-
-
-
-// setTimeout(()=>{
-//     cancelAgreement("TokenizedMerchant02NSVCTVX1660017825385", token.id_token)
-// },3000)
-
 const BKASH_SANDBOX_GATEWAY = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout";
   const BKASH_LIVE_GATEWAY = "https://tokenized.pay.bka.sh/v1.2.0-beta/tokenized/checkout";
   const BKASH_GRANT_TOKEN_URI = "/token/grant";
@@ -171,8 +111,3 @@ const BKASH_SANDBOX_GATEWAY = "https://tokenized.sandbox.bka.sh/v1.2.0-beta/toke
 
 module. exports = bKash;
 
-
-
-
-bKash("sandboxTokenizedUser02",'sandboxTokenizedUser02@12345',"4f6o0cjiki2rfm34kfdadl1eqq","2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b"
-);
